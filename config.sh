@@ -10,10 +10,10 @@ export oem=motorola
 export device=harpia
 
 ROM="PixelExperience"
-manifest_url="https://github.com/PixelExperience/manifest"
-export rom_vendor_name="aosp" # This represent the nams used by different rom vendors, Ex - aosp_harpia-userdebug, aosp is vendor name.
-branch="pie"
+manifest_url=""
+export rom_vendor_name="palladium" # This represent the nams used by different rom vendors, Ex - aosp_harpia-userdebug, aosp is vendor name.
+branch="11"
 
-release_repo="Akianonymus/harpia_builds"
+release_repo="flaahokiller/builds"
 
 timezone="Asia/Kolkata"
