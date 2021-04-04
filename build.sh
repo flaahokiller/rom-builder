@@ -63,7 +63,7 @@ Build Started: [See Progress]($ci_url)"
     if [ -e "device/$oem/$device" ]; then python3 /drone/src/dependency_cloner.py; fi
     lunch $rom_vendor_name_$device-userdebug &> /dev/null
 
-    if mka bacon | grep $device; then
+    if mka palladium | grep $device; then
 		# Build completed succesfully, upload it to github
 		export finalzip_path=$(ls "$outdir/*2019*.zip" | tail -n -1)
 		export zip_name=$(basename -s "$finalzip_path")
